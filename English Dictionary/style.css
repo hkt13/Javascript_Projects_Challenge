@@ -1,0 +1,48 @@
+body{
+    margin: 0px;
+    box-sizing: border-box;
+    min-height: 100vh;
+    background-color: rgba(95, 158, 160,.3);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-family: 'Courier New', Courier, monospace;
+
+}
+
+.container{
+background-color: rgb(55, 123, 211);
+padding: 15px;
+border-radius: 7px;
+box-shadow: 0 10px 10px rgba(0, 0, 0,.5);
+width: 90%;
+max-width: 450px;/*this and above both the statement will together make the container to maintain a width of 450px on resizing*/
+margin: 10px;/*works when width is defined width means raw width not ur max ar min width*/
+font-weight: 600;
+text-align: center;
+}
+#heading{
+    font-size: 30px;
+    color: white;
+   }
+
+   #input{
+    height: 43px;
+    width: 300px;
+padding: 0 20px;
+font-size: 20px;
+border-radius: 5px;
+border-color: rgba(95, 158, 160,.4);
+background-color: rgba(242, 243, 243, 0.74);
+outline: none;
+   }
+
+   
+#meaningcontainer{
+    display: none;
+     color: #571064;
+    background-color: #c2dedf82;
+    padding: 5px;
+    border-radius: 5px;
+    margin-top: 15px;
+}

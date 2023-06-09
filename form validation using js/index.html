@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Form Validation using js</title>
+    <style>
+        body{
+            background-color: rgba(204, 140, 140, 0.26);
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+        }
+        #container{
+            padding: 50px;
+            background-color: white;
+        text-align: center;
+        }
+        h2{
+            font-size: 30px;
+            font-weight: bold;
+            margin: 0px 0px 10px 0px;
+        }
+        input{
+            margin: 10px 0px;
+         padding: 10px;
+         width: 200px;
+
+        }
+        input[type="submit"]{
+width: 222px;
+border: 0px;
+background-color: rgba(204, 140, 140, 0.26);
+color: rgb(180, 37, 37);
+cursor: pointer;
+}
+p{
+    margin: 0px;
+    text-align: left;
+    color: rgb(238, 68, 68);
+}
+
+    </style>
+</head>
+<body>
+    <div id="container">
+        <h2>Login</h2>
+        <form action="" onsubmit="return validate()"><!-- return yha isilye krte hai taaki jo value validate ko return hua hai woh onsubmit ko bhi return hu jaaye kyuki true return kiya toh form submit hoga ar agr false return kiya toh form submit nhi hoga agr yha onsubmit pr agr false return nhi krwaenge yaani agr return nhi likha function ke saath toh glt hone ke bavjood bhi form submit hu jaega-->
+        <input type="text" placeholder="Username" id="userid"><br>
+        <p id="iderror"></p>
+        <input type="password" placeholder="Password" id="userpass"><br>
+        <p id="passerror"></p>
+        <input type="submit" id="submit" >
+        </form>
+    </div>
+    <script>
+        let userid= document.getElementById("userid")
+        let userpass= document.getElementById("userpass")
+        let flag=1;
+        function validate() {
+            if(userid.value==""){
+                document.getElementById("iderror").innerHTML= "user name empty"
+                flag=0;
+            }
+            else if(userid.value.length < 3){
+                document.getElementById("iderror").innerHTML= "min 3 required"
+                flag=0;
+            }
+            else{
+                document.getElementById("iderror").innerHTML= ""
+                flag=1;
+            }
+             if(userpass.value==""){
+                document.getElementById("passerror").innerHTML= "password empty"
+                 flag=0;
+            }
+            else{
+                document.getElementById("passerror").innerHTML= ""
+                if(flag){
+                    flag=1;
+                }
+                else{
+                    flag=0;
+                }
+            }
+            if(flag) {          
+            return true;
+            }
+            else{
+                return false;
+            }}
+        
+    </script>
+</body>
+</html>

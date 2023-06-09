@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width= device-width, initial-scale=1.0">
+    <title>Quiz</title>
+    <link rel="stylesheet" href="index.css">
+</head>
+<body>
+<div id="container">
+    <div id="main">
+        <h2 id="h2">1) What is your name?</h2>
+        <div class="obox">
+             <input type="radio" value="a" id="option1" name="option" class="options"><!--ab ek cheez fixed hai ki jb bhi user options select krke toh woh a b c d hi honge toh hm in inputs ko value de denge toh jb hm js krenge toh yhi valkur receive hogi hme -->
+            <label for="option1">a) Option 1</label>
+        </div>
+        <div class="obox">
+            <input type="radio" value="b" id="option2" name="option" class="options">
+            <label for="option2">b) Option 2</label>
+        </div>
+        <div class="obox">
+            <input type="radio" value="c" id="option3" name="option" class="options">
+            <label for="option3">c) Option 3</label>
+        </div>
+        <div class="obox">
+            <input type="radio" value="d" id="option4" name="option" class="options">
+            <label for="option4">d) Option 4</label>
+        </div>
+        <button id="btn" onclick="next()">Submit</button>
+    </div>
+</div>
+
+
+    <script src="app.js"></script>
+</body>
+</html>

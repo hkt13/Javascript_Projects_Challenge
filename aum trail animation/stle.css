@@ -1,0 +1,40 @@
+body{
+    margin:0px;
+    box-sizing: border-box;
+    background: black;
+    height: 100vh;
+   overflow: hidden;/*scroll htt jaye agr right mein jaaye ya niche jaaye  tb*/
+}
+
+span{
+    display: block;
+    background: url(https://cdn1.iconfinder.com/data/icons/unilite-shift-religion/60/036_010_religion_om_aum_hinduism-256.png);
+    width: 100px;
+    height: 100px;
+    background-size: cover;/*to increase the size of this image as large as possible to fill the element of height and width of 100px which we declared above*/
+    position: absolute;
+    /* //this will bring edge of the icon to the center from top and left */
+    top: 50%;
+    left: 50%;
+    /* but in  order to bring the middle of the icon to the center we moved elements x-axis and y-axis */
+     transform: translate(-50%,-50%);/*we set x-axis and y-axis */
+    /* now we will have our icon exactly the middle of our website */
+    pointer-events: none;/*becuz span body ke andr hi aata hai toh span pr agr mouse aayega toh alg se bhi bnta jaega
+*/
+    animation: animate 6s linear;
+}
+
+@keyframes animate{
+0%{
+    transform: translate(-50%,-50%);
+     opacity:1; 
+    filter: hue-rotate(0deg);
+}
+100%{
+     transform: translate(-50%,-5000%);/*-5000 for upr ki taraf jaate raho */
+    opacity: 0;/*starting mein opacity:1 yaani dikho phir jb complete hu jaaye span add hu jaye toh opacity 0 yaani gayab hote hue jaou */
+    /*upr opacity 0 aur niche opacity 1 krne se starting mein nhi dikhega lekin end mein jb complete hu jaayega jb span add hu jayega toh jb upr jaega toh jaate wqt dikhega upr -5000% jo end mein complete hone pr hoga uski wajah se upr jaega*/
+   filter: hue-rotate(720deg);
+}
+
+}

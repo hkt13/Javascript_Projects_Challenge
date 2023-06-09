@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Slider using js</title>
+</head>
+<style>
+body{
+    margin: 0;
+}
+    header{
+        text-align: center;
+    }
+    #logo{
+        width: 200px;
+        height: auto;
+     }/*
+    #container{
+    
+    } */
+    nav{
+        background-color: rgba(172, 73, 147, 0.486);
+        text-align: center;
+    }
+    nav li{
+        display: inline-block;
+        padding: 10px;
+        color: white;
+        font-weight: bold;
+        font-size: 20px;
+    }
+    h1{
+        font-size: 40px;
+        font-weight: bolder;
+        text-align: center;
+    
+        color: rgb(65, 138, 65);}
+    #image{
+        width: 100%;
+    }
+    p{
+        font-size: 18px;
+        text-align: justify;
+    }
+    .sticky{
+        position: fixed;
+        top: 0;
+        width: 100%;
+    }
+</style>
+<body>
+    <header>
+        <img src="https://thumbs.dreamstime.com/b/health-nature-care-logo-health-nature-hand-care-family-people-logo-vector-image-108793475.jpg" id="logo" alt="error">
+    </header>
+    <nav id="nav">
+        <li>Home</li>
+        <li>Menu</li>
+        <li>About us</li>
+        <li>More</li>
+    </nav>
+<h1>Shiva</h1>
+<img src="https://nepalyogahome.com/wp-content/uploads/2021/04/lord-shiva-the-founder-of-yoga.jpg" alt="" id="image">
+<p>
+    Lorem ipsum, dolor sit amet consectetur adipisicing elit. Facere quibusdam qui quos at sequi ea optio ex temporibus quaerat blanditiis reiciendis totam deleniti quasi laudantium ab quas, dolores fugit non voluptatum! Eos possimus provident hic, illo ullam necessitatibus delectus suscipit iure porro, architecto magnam similique dicta accusamus earum. Quod ad molestias voluptates consectetur quia nisi. Iusto, libero ratione. Quos maxime animi, possimus deleniti optio minus quasi qui sit ipsum incidunt atque accusamus corporis id velit. Ducimus aliquam quidem aut voluptatem alias, sunt facilis neque laudantium blanditiis vitae ullam omnis nostrum rerum fugit aperiam ab ea voluptates quibusdam maxime libero vero. Quo veritatis quam cumque, quibusdam vitae deleniti consectetur neque earum maiores natus aliquid accusantium est ea eveniet et hic totam dolores nesciunt tempora ipsum tenetur distinctio odio repellat? Veritatis, rerum placeat amet optio unde ipsam minus quae aliquid, delectus culpa atque officia iste molestias officiis, nam error. Et rerum tempore accusantium ipsa. Ea repudiandae repellendus mollitia magnam id? Impedit corrupti veritatis sunt veniam deleniti illum laudantium quidem molestias amet. Sunt explicabo, tempore ratione, eos aperiam similique minus vel veniam quas vitae porro quam, aliquid et iste! Ea, amet possimus inventore reprehenderit eius ducimus autem ad blanditiis cum voluptas vitae aut sequi fugit nam rerum tempore consectetur voluptatum dolor! Sit laboriosam animi perspiciatis incidunt aliquam, quaerat assumenda quas adipisci placeat voluptatem! Labore omnis reprehenderit repellendus nobis enim ullam magnam voluptas ab ad! Autem itaque minima tempora dignissimos ad. Esse quod, cumque aspernatur unde sunt inventore, nobis velit, corrupti fugiat nemo quibusdam architecto. Eveniet quisquam expedita iure cumque culpa iste tempora error, quas maxime, sunt, sed beatae asperiores porro consequatur nesciunt corrupti! Veniam iusto fugit veritatis iste ullam at inventore mollitia eaque dolor et eius consequatur, quod deserunt provident quae minima? Facere porro ullam libero facilis! Culpa molestias, fugit laudantium quaerat provident inventore aperiam totam reprehenderit, dolores eaque temporibus dignissimos illum. Ipsum suscipit id aspernatur quam necessitatibus aperiam, dolores cum vel voluptatem ipsam ab exercitationem quidem repellendus nulla voluptatibus quas, iure dicta iste soluta. Delectus distinctio labore rerum praesentium est, dolores sit vero, repellat aperiam nostrum sequi hic? Enim cum accusantium alias reiciendis fugit itaque, unde esse consectetur aperiam dicta illum tempore eaque ab eligendi voluptatem soluta modi incidunt dolor voluptas. Accusamus, eum sequi quibusdam aliquam exercitationem quisquam iste cum dignissimos hic eaque at non, tempore praesentium illo molestiae reiciendis. Mollitia nihil ducimus distinctio autem, iusto nesciunt eaque doloribus tempore architecto officiis.
+</p>
+<script>
+    window.addEventListener('scroll', function() {
+        let nav= document.getElementById("nav")
+        if(window.pageYOffset >= 214){
+         nav.classList.add("sticky");
+        }
+        else{
+            nav.classList.remove("sticky");
+        }
+    })
+</script>
+</body>
+</html>

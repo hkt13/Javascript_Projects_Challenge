@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Background Color Switcher</title>
+    <style>
+        body{
+            padding: 20px 200px;
+        }
+        h1{
+            text-align: center;
+            text-decoration: underline;
+        }
+        img{
+            width: 100%;
+            height: auto;
+            margin: 0 auto;
+        }
+        p{
+            text-align: justify;
+            font-size: 20px;
+        }
+        .btn{
+            height: 20px;
+            width: 20px;
+            display: inline-block;
+            border: solid grey 2px;
+            border-radius: 50%;
+            cursor: pointer;
+        }
+        #white{
+            background-color: white;
+    
+        }
+        #aqua{
+            background-color: aqua;
+        }
+        #red{
+            background-color: red;
+        }
+        #black{
+            background-color: black;
+        }
+        #container{
+            text-align: right;
+        }
+    </style>
+</head>
+
+<body>
+    <div id="container">
+        <span class="btn" id="white" onclick="changebg('#ffffff')"></span>
+        <span class="btn" id="aqua" onclick="changebg('#00ffff')"></span>
+        <span class="btn" id="red" onclick="changebg('#ff0000')"></span>
+        <span class="btn" id="black" onclick="changebg('#000000')"></span>
+    </div>
+    <h1 class="text">The Holy Man Of Dead</h1>
+    <img src="https://www.ganeshaspeaks.com/wp-content/uploads/2021/06/Aghori-sadhus-750-min.jpg" alt="">
+    <p class="text">
+        Lorem, ipsum dolor sit amet consectetur adipisicing elit. Architecto vel laborum aspernatur a molestias iste
+        facere hic odit nobis asperiores quisquam, dolore eos vitae aliquam porro quasi assumenda recusandae quam sunt!
+        At sequi nobis dignissimos rem. Atque, necessitatibus nesciunt natus molestiae eaque voluptatem pariatur magni
+        praesentium? Accusamus iste pariatur, distinctio repellat deleniti corrupti nesciunt, minus quasi eos
+        consequatur veritatis. Commodi repellat officiis vitae debitis animi placeat ut nostrum iure nihil eius sit
+        voluptatem, inventore illum aliquid aspernatur ipsa, quo incidunt delectus nulla soluta numquam, consequuntur
+        corporis quae. Ipsum tempore nemo reiciendis voluptatum quibusdam, commodi magnam debitis officiis, error in
+        aliquid animi labore suscipit et placeat. Excepturi quo eligendi mollitia praesentium! Ipsum sequi ex provident
+        tempora, quo facilis temporibus repellendus quisquam, nesciunt possimus magnam mollitia ut asperiores veritatis
+        minus aliquam vitae fugiat modi iste aut ratione. Aspernatur ducimus quas, perspiciatis ratione totam voluptatem
+        laborum accusantium asperiores reprehenderit provident cupiditate quod dolorem est! Ratione, nesciunt error!
+        Illum quas tenetur et corrupti facilis optio magnam ducimus, quod beatae cumque aspernatur rem possimus cum sit,
+        cupiditate odit sed, vitae nesciunt nemo voluptate! Quae, modi nemo impedit ex hic officia illo. Facilis omnis
+        id aliquam necessitatibus rem dolorum tempora asperiores inventore fuga molestiae. Minima, nulla rem. Provident
+        totam nulla accusamus distinctio, sint blanditiis iusto est dicta nam? Perferendis numquam sint odit laboriosam
+        odio sequi deserunt fugit at modi, quam tenetur labore rem asperiores soluta id placeat in iusto repellendus
+        nihil alias consequuntur doloribus molestiae? Voluptates quae voluptatibus rerum reprehenderit est iure nesciunt
+        itaque repellat nobis odit animi, neque dolorem! Reprehenderit earum nesciunt, asperiores amet dolorum odit
+        saepe nam alias nostrum cumque commodi doloremque nobis. Culpa amet pariatur doloribus, minus harum neque
+        ratione quia labore quidem eos asperiores nisi non a velit animi iure error mollitia? Quas exercitationem fugit
+        eius dolores vero facere velit doloribus esse reiciendis iste, quisquam vel libero assumenda consequuntur
+        nesciunt quibusdam et eum quaerat, aliquam dolorem ab? Aliquid dignissimos molestias expedita iusto similique,
+        culpa illo a explicabo officia ducimus in odit quae excepturi asperiores tenetur ex error voluptates. Libero,
+        reiciendis tenetur omnis dignissimos reprehenderit error laboriosam totam dolor vitae, a ratione animi sunt
+        veritatis aliquid et adipisci molestias labore numquam recusandae harum eius est eligendi doloribus. Impedit
+        quia ullam dolor architecto illo ipsam fugit natus voluptatibus voluptas autem quas quis dolorum ea illum omnis,
+        explicabo sequi modi iusto eos quisquam praesentium! Commodi cumque minus porro quia dolorum debitis, magnam
+        nesciunt architecto beatae, in dolores laborum accusantium, aspernatur illum eligendi doloribus animi. Eaque,
+        tempora labore aspernatur rerum hic sunt maiores consectetur vero nisi nobis eum accusantium minima ducimus
+        atque temporibus pariatur ipsam totam nihil iure beatae ex ullam, blanditiis nesciunt eveniet? Non quidem rem
+        inventore? Dolor itaque ipsam ducimus vero facere non consequatur assumenda, mollitia quia modi! Quasi nemo
+        obcaecati vitae quisquam nam ratione assumenda autem a quia quas unde ipsam repudiandae libero, vel sit
+        asperiores vero eum neque porro qui dolor veniam deleniti quis totam. Vitae asperiores sint repudiandae earum
+        beatae facere id explicabo rerum accusamus tenetur, porro dicta quaerat? Rem, architecto!
+    </p>
+    <script>
+function changebg(color){
+  document.body.style.backgroundColor= color;
+  let txt= document.getElementsByClassName("text")
+  if(color=="#000000")
+  {
+    for (ele of txt) {
+        ele.style.color= "#ffffff"
+    }
+  }
+  else{
+    for (ele of txt) {
+        ele.style.color= "#000000"
+    }
+  }
+
+}
+
+    </script>
+</body>
+
+</html>

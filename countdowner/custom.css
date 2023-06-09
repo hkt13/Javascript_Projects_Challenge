@@ -1,0 +1,43 @@
+*{
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+}
+#slide{
+    background-image: url('img/img.jpg');
+    width: 100%;
+    height: 100vh;
+}
+.overlay{
+    display: flex;
+    flex-direction: column;
+width: 100%;
+height:100%;
+background-color: rgb(0,0,0,0.7);
+}
+.abt{
+font-size: 40px;
+color: white;
+font-weight: bold;
+text-align: center;
+margin-top: 15px;
+}
+.box{
+    height: 150px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    color :white;
+
+}
+
+input{
+ text-align: center;   
+ width: 50%;
+ height: 50px;
+ background-color: rgb(255,255,255,0.8);
+ border: transparent;
+ border-radius: 10%; 
+ font-size: 15px;  
+}
